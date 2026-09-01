@@ -34,7 +34,8 @@ Preview:
 
 <img width="959" height="332" alt="image" src="https://github.com/user-attachments/assets/08b14858-dfbb-4295-8467-4a41c19ef63c" />
 
-Contact:
 
+Contact:
 Created by Fatimah Sajjadali - feel free to reach out! Email: fatimahsajjadali@gmail.com
+
 LinkedIn: https://www.linkedin.com/in/fatimahsajjadali/
