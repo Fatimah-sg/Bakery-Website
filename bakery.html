@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bakery Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <h1 class="visually-hidden">Bakery Shop</h1>
+
+    <section class="bakery-header py-3">
+
+        <div class="container header-container">
+
+            <!-- DESKTOP LEFT NAVIGATION -->
+            <nav class="desktop-nav d-flex gap-3 gap-md-4 align-items-center">
+
+                <a href="#" class="nav-link">Bakery</a>
+
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown">
+                        Pages
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">About</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#">Services</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="#" class="nav-link">Our Bread</a>
+
+                <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- LOGO -->
+            <div class="logo">
+
+                <img
+                    src="bakery-logo-header.png"
+                    class="logo-img"
+                    alt="Bakery Logo"
+                >
+
+                <div class="logo-text fw-bold">
+                    BAKERY SHOP
+                </div>
+
+            </div>
+
+
+            <!-- DESKTOP RIGHT ICONS -->
+            <div class="desktop-icons d-flex align-items-center gap-3">
+
+                <!-- SEARCH ICON -->
+                <a href="#search" class="header-icon">
+                    <i class="bi bi-search fs-4"></i>
+                </a>
+
+
+                <!-- CART ICON -->
+                <a href="#cart" class="header-icon position-relative">
+
+                    <i class="bi bi-basket fs-4"></i>
+
+                    <span class="cart-count">
+                        0
+                    </span>
+
+                </a>
+
+            </div>
+
+            <!-- MOBILE MENU BUTTON -->
+            <button
+                class="mobile-menu-button"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu"
+                aria-controls="mobileMenu">
+
+                <i class="bi bi-list"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- MOBILE OFFCANVAS MENU -->
+
+        <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="mobileMenu"
+            role="dialog"
+            aria-labelledby="mobileMenuLabel">
+
+             <!-- Mobile Menu Header -->
+
+            <div class="offcanvas-header">
+
+                <h2
+                    class="offcanvas-title"
+                    id="mobileMenuLabel">
+
+                    BAKERY SHOP
+
+                </h2>
+
+                <!-- Close Button -->
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close">
+                </button>
+
+            </div>
+
+            <!-- Mobile Menu Body -->
+
+            <div class="offcanvas-body">
+
+                <nav class="mobile-nav">
+
+                    <a href="#" class="mobile-nav-link">
+                        Bakery
+                    </a>
+
+                    <a href="#" class="mobile-nav-link">
+                        Pages
+                    </a>
+
+                    <a href="#" class="mobile-nav-link">
+                        Our Bread
+                    </a>
+
+                    <a href="#" class="mobile-nav-link" data-bs-toggle="modal" data-bs-target="#contactModal" data-bs-dismiss="offcanvas">
+                        Contact
+                    </a>
+
+                    <a href="#" class="mobile-nav-link">
+                        Search
+                    </a>
+
+                    <a href="#" class="mobile-nav-link">
+                        Cart
+                    </a>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="bakery-bg">
+        <div class ="container-fluid">
+            <div class="row align-items-center g-0">
+
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4 p-4 p-md-5 text-center">
+                    <h2 class="fw-bold mb-3">
+                        Bakery Menu
+                    </h2>
+
+                    <p class="mb-4 small">
+                    Nibh venenatis cras sed felis eget velit aliquet sagittis id.
+                    Tellus pellentesque eu tincidunt tortor aliquam nulla.
+                    </p>
+
+                    <p class="mt-3 mb-4 small text-muted">Image from Freepik</p>
+
+                    <a href="#" class=" btn button-style">
+                    READ MORE
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fullscreen-bg d-flex align-items-center">
+        <div class="container text-white text-center">
+
+            <h2 class="fw-bold mt-5 mb-5">Sweets</h2>
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-body">
+                            <h3 class="card-title text-start text-md-left">Cookies</h3>
+                            <ul class="list-unstyled text-start text-md-left">
+                                <li>- Biscotti</li>
+                                <li>- Chocolate Chip</li>
+                                <li>- Oatmeal Pecan</li>
+                                <li>- Oat Ginger Bar</li>
+                                <li>- Seasonal Specials</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card pb-5" style="width: 16rem;">
+                        <div class="card-body">
+                            <h3 class="card-title text-start text-md-left">Scones</h3>
+                            <ul class="list-unstyled text-start text-md-left">
+                                <li>- Classic Butter Scones</li>
+                                <li>- Fresh Fruit Buttermilk Scones</li>
+                                <li>- Handmade Scones</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card" style="width: 16rem;">
+                        <div class="card-body">
+                            <h3 class="card-title text-start text-md-left">Other</h3>
+                            <ul class="list-unstyled text-start text-md-left">
+                                <li>- Seasonal Galletes</li>
+                                <li>- Tartlets</li>
+                                <li>- Banana Bread</li>
+                                <li>- Banana Pudding</li>
+                                <li>- Cranberry Pecan Granola</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+                <p class="mt-3 mb-4 small text-white">Image from Freepik</p>
+            </div> <!-- end row -->
+
+        </div> <!-- end container -->
+    </section>
+
+
+    <section class="menu-bg d-flex align-items-center">
+        <div class="container text-black text-center mb-4 mb-md-5">
+            <h2 class="fw-bold mt-5 mb-5">Our Bread</h2>
+
+            <div class="row justify-content-center g-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 d-flex justify-content-center">
+                <div class="card h-100 p-4 p-md-3">
+                    <img src="croissant-flat-lay-food-photogra.jpg" style="height: 280px;" class="card-img-top" alt="...">
+                    <div class="card-body text-start text-md-left">
+                    <h3 class="card-title">Traditional Croissant</h3>
+                    <h4 class="card-text" style="color: rgb(197, 153, 120);"><b>$2.50</b></h4>
+                    <p class="card-text"><small><i>Flaky, buttery pasry with a tender, airy crumb. Made from our signature levain sourdough and crafted over a 48-hour fermentation</i></small></p>
+                    <a href="#" class="btn cart-style">ADD TO CART</a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 d-flex justify-content-center">
+                <div class="card h-100 p-4 p-md-3">
+                    <img src="rre.jpg" style="height: 280px;" class="card-img-top" alt="...">
+                    <div class="card-body text-start text-md-left">
+                    <h3 class="card-title">Handmade Bread</h3>
+                    <h4 class="card-text" style="color: rgb(197, 153, 120);"><b>$6.50</b></h4>
+                    <p class="card-text"><small><i>Naturally leavend bread made using the Sourdough Rye dough and studded with dried black currants</i></small></p>
+                    <a href="#" class="btn cart-style">ADD TO CART</a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 d-flex justify-content-center">
+                <div class="card h-100 p-4 p-md-3">
+                    <img src="DanishRye.jpg" style="height: 280px;" class="card-img-top" alt="...">
+                    <div class="card-body text-start text-md-left">
+                    <h3 class="card-title">Danish Rye</h3>
+                    <h4 class="card-text" style="color: rgb(197, 153, 120);"><b>$7.75</b></h4>
+                    <p class="card-text"><small><i>Whole rye flour,cracked rye berries, water,natural leaven culture made with rye flour, pumpkin seeds, sunflower seeds, barley malt syrup, sea salt</i></small></p>
+                    <a href="#" class="btn cart-style">ADD TO CART</a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 d-flex justify-content-center">
+                <div class="card h-100 p-4 p-md-3">
+                    <img src="ttt6.jpg" style="height: 280px;" class="card-img-top" alt="...">
+                    <div class="card-body text-start text-md-left">
+                    <h3 class="card-title">Ciabatta</h3>
+                    <h4 class="card-text" style="color: rgb(197, 153, 120);"><b>$3.50</b></h4>
+                    <p class="card-text"><small><i>Unbleached organic bleach flour,whole rye flour, water,natural leaven culture, sea salt, yeast</i></small></p>
+                    <a href="#" class="btn cart-style">ADD TO CART</a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 d-flex justify-content-center">
+                <div class="card h-100 p-4 p-md-3">
+                    <img src="cheese-bread.jpg" style="height: 280px;" class="card-img-top" alt="...">
+                    <div class="card-body text-start text-md-left">
+                    <h3 class="card-title">Cheese Bread</h3>
+                    <h4 class="card-text" style="color: rgb(197, 153, 120);"><b>$4.75</b></h4>
+                    <p class="card-text"><small><i>Soft and savoury loaf enriched with melted cheese inside and out. MAde with our signature dough and aged cheddar, this bread offersa rich, buttery flavour and a golden crispy crust</i></small></p>
+                    <a href="#" class="btn cart-style">ADD TO CART</a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4 d-flex justify-content-center">
+                <div class="card h-100 p-4 p-md-3">
+                    <img src="1.jpg" style="height: 280px;" class="card-img-top" alt="...">
+                    <div class="card-body text-start text-md-left">
+                    <h3 class="card-title">Multigrain Bread</h3>
+                    <h4 class="card-text" style="color: rgb(197, 153, 120);"><b>$4.75</b></h4>
+                    <p class="card-text"><small><i>Naturally leavened bread made using the French Country dough with the additions of millet, quinoa, rolled oats</i></small></p>
+                    <a href="#" class="btn cart-style">ADD TO CART</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </section>
+
+    <section class="subscribe-bg">
+        <div class="container subscribe-content">
+            <div class="row justify-content-start ms-md-5">
+
+                <div class="col-md-6">
+                    <h2 class="fw-bold mb-4 mt-5 mt-md-0">Subscribe to the Bakery News</h2>
+                    <p class="mb-4">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
+                    </p>
+
+                    <form class="d-flex gap-3 gap-md-4">
+                        <input type="email" class="form-control" placeholder="email">
+                        <button class="btn btn-orange px-4">SUBMIT</button>
+                    </form>
+
+                    <p class="small mt-3">Image from Freepik</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bakery-footer py-5">
+    <div class="container text-center mb-4">
+        <img src="bakery-logo-footer.png" class="footer-logo mb-2" alt="Bakery Logo">
+        <h3 class="fw-bold text-white">BAKERY SHOP</h3>
+    </div>
+
+    <div class="container">
+        <div class="row gy-4 text-center text-md-start">
+
+            <!-- QUICK LINKS -->
+            <div class="col-md-3 mb-4">
+                <h4 class="fw-bold mb-3 text-white">Quick Links</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="footer-link">About Us</a></li>
+                    <li><a href="#" class="footer-link">Bakery Menu</a></li>
+                    <li><a href="#" class="footer-link">Visit Us</a></li>
+                    <li><a href="#" class="footer-link">Testimonials</a></li>
+                </ul>
+
+                <div class="d-flex gap-3 mt-3 justify-content-center justify-content-md-start">
+                    <i class="bi bi-facebook fs-5" style="color: orange;"></i>
+                    <i class="bi bi-twitter-x fs-5" style="color: orange;"></i>
+                    <i class="bi bi-instagram fs-5" style="color: orange;"></i>
+                </div>
+            </div>
+
+            <!-- HELP -->
+            <div class="col-md-3 mb-4">
+                <h4 class="fw-bold mb-3 text-white">Help</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="footer-link">FAQs</a></li>
+                    <li><a href="#" class="footer-link">Allergens</a></li>
+                    <li><a href="#" class="footer-link">Contact Us</a></li>
+                    <li><a href="#" class="footer-link">Have Your Say</a></li>
+                </ul>
+                <p class="small mt-3 text-white">Images from Freepik</p>
+            </div>
+
+            <!-- GET IN TOUCH -->
+            <div class="col-md-3 mb-4">
+                <h4 class="fw-bold mb-3 text-white">Get In Touch</h4>
+                <p class="footer-text">14 E 12th St, New York, NY 10007, United States</p>
+                <p class="footer-text">hi@bakery.com</p>
+                <p class="footer-text">+1 (234) 567-8910</p>
+            </div>
+
+            <!-- SUBSCRIBE -->
+            <div class="col-md-3 mb-4">
+                <h4 class="fw-bold mb-3 text-white">Subscribe</h4>
+                <input type="email" class="form-control mb-3" style="border-radius: 50px;" placeholder="Enter a valid email address">
+                <button class="btn btn-orange w-100">SEND A MESSAGE</button>
+            </div>
+
+        </div>
+    </div>
+   </footer>
+
+<!-- =====================================================
+     CONTACT MODAL
+====================================================== -->
+    <div
+        class="modal fade"
+        id="contactModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="contactModalLabel"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content contact-modal">
+
+
+                <!-- ================= MODAL HEADER ================= -->
+
+                <div class="modal-header contact-modal-header">
+
+                    <h3
+                        class="modal-title"
+                        id="contactModalLabel">
+
+                        Contact Us
+
+                    </h3>
+
+                    <button
+                        type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                    </button>
+
+                </div>
+
+
+                <!-- ================= MODAL BODY ================= -->
+
+                <div class="modal-body contact-modal-body">
+                
+                    <h4>
+                        Our Bakery
+                    </h4>
+
+
+                    <p class="contact-intro">
+                        We'd love to hear from you! Visit us,
+                        give us a call, or send us an email.
+                    </p>
+
+
+                    <!-- ADDRESS -->
+
+                    <div class="contact-item">
+
+                        <i class="bi bi-geo-alt-fill contact-icon"></i>
+
+                        <div>
+
+                            <h5>
+                                Our Address
+                            </h5>
+
+                            <p>
+                                14 E 12th St,<br>
+                                New York, NY 10007,<br>
+                                United States
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div class="contact-item">
+
+                        <i class="bi bi-telephone-fill contact-icon"></i>
+
+                        <div>
+
+                            <h5>
+                                Phone
+                            </h5>
+
+                            <p>
+                                <a href="tel:+12345678910">
+                                    +1 (234) 567-8910
+                                </a>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="contact-item">
+
+                        <i class="bi bi-envelope-fill contact-icon"></i>
+
+                        <div>
+
+                            <h5>
+                                Email
+                            </h5>
+
+                            <p>
+                                <a href="mailto:hi@bakery.com">
+                                    hi@bakery.com
+                                </a>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- OPENING HOURS -->
+
+                    <div class="contact-item">
+
+                        <i class="bi bi-clock-fill contact-icon"></i>
+
+                        <div>
+
+                            <h5>
+                                Opening Hours
+                            </h5>
+
+                            <p>
+                                Monday - Saturday<br>
+                                8:00 AM - 7:00 PM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- ================= MODAL FOOTER ================= -->
+
+                <div class="modal-footer contact-modal-footer">
+
+                    <button
+                        type="button"
+                        class="btn btn-orange px-4"
+                        data-bs-dismiss="modal">
+
+                        CLOSE
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
