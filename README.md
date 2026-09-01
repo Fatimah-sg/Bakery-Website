@@ -22,6 +22,7 @@ This project was created to practice:
 - Building a cohesive brand theme
 
 Preview:
+
 <img width="959" height="441" alt="image" src="https://github.com/user-attachments/assets/6461c1c7-fd49-44c3-8e84-0d6d85780666" />
 
 <img width="959" height="441" alt="image" src="https://github.com/user-attachments/assets/7133c031-2428-4344-9a34-907e59b598d7" />
@@ -33,6 +34,7 @@ Preview:
 
 <img width="959" height="332" alt="image" src="https://github.com/user-attachments/assets/08b14858-dfbb-4295-8467-4a41c19ef63c" />
 
-Contact: 
+Contact:
+
 Created by Fatimah Sajjadali - feel free to reach out! Email: fatimahsajjadali@gmail.com
 LinkedIn: https://www.linkedin.com/in/fatimahsajjadali/
