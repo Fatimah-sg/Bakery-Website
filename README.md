@@ -22,7 +22,6 @@ This project was created to practice:
 - Building a cohesive brand theme
 
 Live Demo: 
-
 https://fatimah-sg.github.io/Bakery-Website/
 
 Preview:
