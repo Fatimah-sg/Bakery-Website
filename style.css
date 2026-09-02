@@ -1,0 +1,649 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.bakery-header {
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    z-index: 1000;
+}
+
+
+/* Main header container */
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =========================================
+   DESKTOP NAVIGATION
+========================================= */
+
+.desktop-nav {
+    flex: 1;
+}
+
+
+/* Navigation links */
+
+.nav-link {
+    color: #5a4632;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #c47a3a;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    flex: 0 0 auto;
+    text-align: center;
+    margin: 0 30px;
+}
+
+.logo-img {
+    width: 50px;
+}
+
+.logo-text {
+    color: #5a4632;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+
+/* =========================================
+   RIGHT ICONS
+========================================= */
+
+.desktop-icons {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+/* =========================================
+   CLICKABLE HEADER ICONS
+========================================= */
+
+.header-icon {
+    color: #5a4632;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-icon:hover {
+    color: #c47a3a;
+}
+
+
+/* Cart number */
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+
+    background-color: orange;
+    color: white;
+
+    font-size: 12px;
+
+    padding: 2px 6px;
+
+    border-radius: 50%;
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+.button-style {
+    background-color: orange;
+    color: white;
+    border-radius: 100px;
+    font-weight:600;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* =========================================
+   MOBILE MENU BUTTON
+========================================= */
+
+.mobile-menu-button {
+    display: none;
+
+    border: none;
+    background-color: transparent;
+
+    color: #5a4632;
+
+    font-size: 35px;
+
+    padding: 0;
+}
+
+
+/* =========================================
+   OFFCANVAS MENU
+========================================= */
+
+.offcanvas {
+    background-color: white;
+    width: 300px !important;
+}
+
+.offcanvas-title {
+    color: #5a4632;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* Mobile navigation */
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Mobile links */
+
+.mobile-nav-link {
+    color: #5a4632;
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+    padding: 18px 10px;
+
+    border-bottom: 1px solid #eee;
+}
+
+.mobile-nav-link:hover {
+    color: #c47a3a;
+    background-color: #fff8e7;
+}
+
+
+/* =========================================
+   TABLET + MOBILE
+========================================= */
+
+@media (max-width: 991px) {
+
+    /* Hide desktop navigation */
+
+    .desktop-nav {
+        display: none !important;
+    }
+
+
+    /* Hide search and basket */
+
+    .desktop-icons {
+        display: none !important;
+    }
+
+
+    /* Put logo on LEFT */
+
+    .logo {
+        order: 1;
+
+        margin: 0;
+
+        text-align: left;
+
+        display: flex;
+        align-items: center;
+
+        gap: 8px;
+    }
+
+
+    /* Put hamburger on RIGHT */
+
+    .mobile-menu-button {
+        display: block;
+
+        order: 2;
+
+        margin-left: auto;
+    }
+
+
+    /* Logo image */
+
+    .logo-img {
+        width: 45px;
+    }
+
+
+    /* Logo text */
+
+    .logo-text {
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 575px) {
+
+    .bakery-header {
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+    }
+
+
+    .logo-img {
+        width: 40px;
+    }
+
+
+    .logo-text {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+    }
+
+
+    .mobile-menu-button {
+        font-size: 32px;
+    }
+
+}
+
+.bakery-bg {
+    background-image: url(bread-09.jpg);
+    background-color:rgb(255, 246, 231);
+    min-height: 600px;
+    display: flex;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    align-items: center;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .bakery-bg{
+       min-height: 500px;
+       background-position: center;
+       background-size: cover;
+    }
+}
+
+ /* Mobile */
+@media (max-width: 575px) {
+    .bakery-bg {
+        min-height: 550px;
+        background-position: center;
+        text-align: center;
+        }
+
+    .bakery-bg {
+        padding: 30px 15px;
+    }
+}
+
+.fullscreen-bg {
+    min-height: 600px;                 /* full screen height */
+    background-image: url('uyy.jpg');
+    background-size: cover;            /* fill the screen */
+    background-position: center;       /* center the image */ 
+    background-repeat: no-repeat;      /* no tiling */
+}
+
+.fullscreen-bg {
+    align-items: center;
+}
+.fullscreen-bg .container {
+    z-index: 2;
+}
+.fullscreen-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.0);
+    z-index: 1;
+}
+
+.card {
+    background-color: white; /* fully opaque */
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.card-body {
+    color: black; /* text color */
+}
+
+.card-img-top {
+  height: 280px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+ /* Mobile */
+@media (max-width: 768px) {
+    .card-group {
+        width: auto;
+        display: flex;
+        justify-content: center;
+}
+}
+
+.menu-bg {
+    min-height: 600px;                 /* full screen height */
+    background-color:rgb(197, 153, 120);
+    background-size: cover;            /* fill the screen */
+    background-position: center;       /* center the image */
+    background-repeat: no-repeat;      /* no tiling */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .menu-bg .card {
+        max-width: 260px;   /* prevents stretching */
+        margin: 0 auto;     /* keeps cards centered */
+    }
+
+    .menu-bg .col-md-3 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+.cart-style {
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+    font-weight:600;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.subscribe-bg {
+    position: relative;
+    min-height: 600px;                 /* full screen height */
+    background-image: url('fgfg-min.jpg');
+    background-size: cover;            /* fill the screen */
+    background-position: center;       /* center the image */
+    background-repeat: no-repeat;      /* no tiling */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* dark muted overlay */
+.subscribe-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45); /* adjust darkness here */
+    z-index: 1;
+}
+
+/* content stays above overlay */
+.subscribe-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.btn-orange {
+    background-color: orange;
+    color: white;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.bakery-footer {
+    background-color: black; /* soft bakery cream */
+}
+
+.footer-logo {
+    width: 60px;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #c47a3a;
+}
+
+.footer-text {
+    color: white;
+    margin-bottom: 8px;
+}
+
+/* =========================================
+   CONTACT MODAL
+========================================= */
+
+.contact-modal {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 500px;
+    margin: auto;
+}
+
+
+/* =========================================
+   MODAL HEADER
+========================================= */
+
+.contact-modal-header {
+    background-color: #5a4632;
+    color: white;
+    border-bottom: none;
+    padding: 18px 25px;
+}
+
+.contact-modal-header h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+/* =========================================
+   MODAL BODY
+========================================= */
+
+.contact-modal-body {
+    padding: 22px 25px;
+    background-color: white;
+}
+
+.contact-modal-body h3 {
+    color: #5a4632;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.contact-intro {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   CONTACT ITEMS
+========================================= */
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+
+/* Icons */
+
+.contact-icon {
+    color: orange;
+    font-size: 21px;
+    min-width: 28px;
+    margin-top: 3px;
+}
+
+
+/* Contact headings */
+
+.contact-item h5 {
+    color: #5a4632;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+
+/* Contact text */
+
+.contact-item p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+
+/* Phone and email */
+
+.contact-item a {
+    color: #c47a3a;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    color: #5a4632;
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   MODAL FOOTER
+========================================= */
+
+.contact-modal-footer {
+    background-color: #fff8e7;
+    border-top: 1px solid #eee;
+    padding: 10px 25px;
+}
+
+
+/* =========================================
+   MOBILE CONTACT MODAL
+========================================= */
+
+@media (max-width: 575px) {
+
+    .contact-modal {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .contact-modal-header {
+        padding: 15px 20px;
+    }
+
+    .contact-modal-header h2 {
+        font-size: 23px;
+    }
+
+    .contact-modal-body {
+        padding: 18px 20px;
+    }
+
+    .contact-modal-body h3 {
+        font-size: 21px;
+    }
+
+    .contact-intro {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .contact-item {
+        gap: 12px;
+        margin-bottom: 13px;
+    }
+
+    .contact-icon {
+        font-size: 19px;
+        min-width: 25px;
+    }
+
+    .contact-item h5 {
+        font-size: 16px;
+    }
+
+    .contact-item p {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-height: 700px) {
+
+    .modal-dialog {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contact-modal-header {
+        padding: 12px 20px;
+    }
+
+    .contact-modal-body {
+        padding: 15px 20px;
+    }
+
+    .contact-item {
+        margin-bottom: 10px;
+    }
+
+    .contact-modal-footer {
+        padding: 8px 20px;
+    }
+
+}
