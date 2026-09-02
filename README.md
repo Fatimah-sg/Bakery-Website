@@ -21,6 +21,10 @@ This project was created to practice:
 - Improving front‑end styling skills
 - Building a cohesive brand theme
 
+Live Demo: 
+
+https://fatimah-sg.github.io/Bakery-Website/
+
 Preview:
 
 <img width="959" height="441" alt="image" src="https://github.com/user-attachments/assets/6461c1c7-fd49-44c3-8e84-0d6d85780666" />
